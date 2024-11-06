@@ -1,12 +1,15 @@
 
-# PnP-FISTA
-This repository contains codes for experiments on PnP-FISTA with data-driven denoisers.
-Currently the repository contains three experiments. More will get added soon.
+# PnP-FISTA Repository
 
-## Experiments
-1. ***Superresolution***: The [notebook](https://github.com/arghyasinha/PnP-FISTA/blob/main/superresolution_demo.ipynb) contains an implementation of superresolution with *DSG-NLM* denoiser. This includes an implementation of the forward operator $A$ , *PnP-FISTA* and the reconstructions.
-2. ***Deblurring***: The [notebook](https://github.com/arghyasinha/PnP-FISTA/blob/main/deblurring_demo.ipynb) contains an implementation of deblurring with DSG-NLM denoiser.
-3. ***Divergence of DRUNet***: The [notebook](https://github.com/arghyasinha/PnP-FISTA/blob/main/drunet_divergence_example.ipynb) contains an example of a practical case where PnP-ISTA with *DRUNet* denoiser diverges.
+This repository features code for conducting experiments with PnP-FISTA using data-driven denoisers.
+
+## Experiments Overview
+
+1. **Superresolution**: The [superresolution demo notebook](https://github.com/arghyasinha/PnP-FISTA/blob/main/superresolution_demo.ipynb) showcases an implementation of superresolution utilizing the *DSG-NLM* denoiser. It includes the forward operator $ A $, the *PnP-FISTA* algorithm, and the resulting reconstructions.
+
+2. **Deblurring**: The [deblurring demo notebook](https://github.com/arghyasinha/PnP-FISTA/blob/main/deblurring_demo.ipynb) presents an implementation of deblurring using the *DSG-NLM* denoiser.
+
+3. **Divergence of DRUNet**: The [DRUNet divergence example notebook](https://github.com/arghyasinha/PnP-FISTA/blob/main/drunet_divergence_example.ipynb) illustrates a practical scenario in which *PnP-ISTA* with the *DRUNet* denoiser diverges.
 
 
 
@@ -40,5 +43,5 @@ Currently the repository contains three experiments. More will get added soon.
 
 
 
-### Models
+### Models for deep denoisers
 Two denoisers, DRUNet and DnCNN (Pesquet et. al.) are imported through [Deepinv](https://deepinv.github.io/deepinv/). The models are stored in `models` folder and also can be found [here](https://deepinv.github.io/deepinv/deepinv.denoisers.html).
