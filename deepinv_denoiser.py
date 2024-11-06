@@ -16,16 +16,15 @@ device = dinv.utils.get_freer_gpu() if torch.cuda.is_available() else "cpu"
 denoiser_dncnn = DnCNN(
     in_channels=n_channels,
     out_channels=n_channels,
-    pretrained="/home/arghya/PnP-FISTA (copy 1)/models/DnCNN_sigma25/dncnn_sigma2_lipschitz_gray.pth",  # automatically downloads the pretrained weights, set to a path to use custom weights.
+    pretrained="./models/dncnn_sigma2_lipschitz_gray.pth",  # automatically downloads the pretrained weights, set to a path to use custom weights.
     # pretrained="download_lipchitz",
     device=device,
 )
 denoiser_drunet = dinv.models.DRUNet(
     in_channels=n_channels,
     out_channels=n_channels,
-    # pretrained="/home/arghya/PnP-FISTA (copy 1)/models/DnCNN_sigma25/dncnn_sigma2_lipschitz_gray.pth",  # automatically downloads the pretrained weights, set to a path to use custom weights.
-    #pretrained="drunet_gray.pth",
-    pretrained="download",
+    pretrained="./models/drunet_gray.pth",
+    # pretrained="download",
     device=device,
 )
 #denoiser_TV = dinv.models.TVDenoiser()
