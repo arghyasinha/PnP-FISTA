@@ -27,7 +27,6 @@ denoiser_drunet = dinv.models.DRUNet(
     # pretrained="download",
     device=device,
 )
-#denoiser_TV = dinv.models.TVDenoiser()
 
 
 def run_deepinv(y,sigma = 0.05,denoiser_deep = denoiser_dncnn,plot_curves=False):
