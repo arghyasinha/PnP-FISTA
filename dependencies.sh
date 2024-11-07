@@ -10,3 +10,10 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 pip install deepinv
 
 pip install torchsummary 
+
+
+##### To download the pretrained models, run the following commands #####
+pip install gdown
+FOLDER_ID="16aBKsnIKQZBIpyucz17zYT9_nneT4V0V?usp=drive_link"
+
+gdown --folder "$FOLDER_ID"
