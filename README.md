@@ -44,4 +44,4 @@ This repository features code for conducting experiments with PnP-FISTA using da
 
 
 ### Models for deep denoisers
-Two denoisers, DRUNet and DnCNN (Pesquet et. al.) are imported through [Deepinv](https://deepinv.github.io/deepinv/). The models are stored in `models` folder and also can be found [here](https://deepinv.github.io/deepinv/deepinv.denoisers.html).
+Two denoisers, DRUNet and DnCNN (MMO, Pesquet et. al. 2020) are imported through [Deepinv](https://deepinv.github.io/deepinv/). The models can be downloaded through [dependencies.sh](https://github.com/arghyasinha/PnP-FISTA/blob/main/dependencies.sh) and also can be found [here](https://deepinv.github.io/deepinv/deepinv.denoisers.html).
